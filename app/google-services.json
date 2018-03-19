@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "667442398623",
+    "firebase_url": "https://ta-pens2018.firebaseio.com",
+    "project_id": "ta-pens2018",
+    "storage_bucket": "ta-pens2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667442398623:android:a91b89b9127dd305",
+        "android_client_info": {
+          "package_name": "id.pens.eventorganizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667442398623-5ue24p12l0hv5hm3acoec9k6a03jhibd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.pens.eventorganizer",
+            "certificate_hash": "82e5097ff169fbb8f533066d4b304f87825d51c2"
+          }
+        },
+        {
+          "client_id": "667442398623-ncgh3f57e9rfs4n6s3h38p29ng893j3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIxVN8GgQPRQPPrbo4WQ-XB_79Rtpp8rY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667442398623-ncgh3f57e9rfs4n6s3h38p29ng893j3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

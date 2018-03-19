@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_rel"
+    tools:context="id.pens.eventorganizer.ScanActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/tv_scan_nama"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#ffffff"
+            />
+        <TextView
+
+            android:id="@+id/tv_scan_jenis_tiket"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text=""
+            android:textColor="#ffffff"
+            />
+        <TextView
+
+            android:id="@+id/tv_checkin_status"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Checkin"
+            android:textColor="@color/orange"
+            />
+
+        <TextView
+
+            android:id="@+id/tv_checkin_kode"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/orange"
+            />
+    </LinearLayout>
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/qrdecoderview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="145dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="match_parent" />
+
+    <id.pens.eventorganizer.PointsOverlayView
+        android:id="@+id/points_overlay_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <CheckBox
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="On/Off flashlight"
+        android:layout_alignParentBottom="true"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:textColor="#ffffff"
+        android:id="@+id/flashlight_checkbox"
+        android:checked="false"
+        />
+    <CheckBox
+        android:background="#99000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="On/Off QR decoding"
+        android:layout_above="@+id/flashlight_checkbox"
+        android:textSize="14sp"
+        android:padding="16dp"
+        android:textColor="#ffffff"
+        android:id="@+id/enable_decoding_checkbox"
+        android:checked="true"
+        />
+</RelativeLayout>

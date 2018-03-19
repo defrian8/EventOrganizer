@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".DashboarOrganizer"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/div_dasboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/header_profile"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/pantai"
+            android:fitsSystemWindows="true"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_nama_event"
+                android:text="sjdsd snd sajsjas ajsajsas asjajsa asjajsas "
+                android:textColor="#fff"
+                android:textSize="14pt"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#fff"
+                android:textSize="9pt"
+                android:layout_gravity="center_horizontal"
+                android:text="Dashboard App"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/div_dasboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ddd"
+        >
+        <LinearLayout
+            android:background="#fff"
+            android:id="@+id/icon_menu"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="90dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ListAttender"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_listsvg"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingTop="28dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/scanQR"
+                    android:src="@drawable/scan"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingTop="23dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="46dp"
+                    android:id="@+id/list_att_check"
+                    android:src="@drawable/list_checked"
+                    android:layout_height="52dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_below="@+id/icon_menu"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/frame_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.pens.eventorganizer.RatingActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    <LinearLayout
+        android:layout_below="@id/toolbar_rating"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_ratingNama_event"
+            android:textSize="20sp"
+            android:text="Workshop beginner's Guide To Coding RASPBERRY Pi3"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="09-03-2018"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_rating_tanggal"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:layout_below="@+id/rate_me"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+           style="@style/RatingBarku"
+            android:layout_gravity="center_horizontal"
+            android:stepSize="1.0" />
+        <EditText
+            android:hint="Comment"
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <Button
+            android:id="@+id/btnDone"
+            android:text="SUBMIT RATING"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:background="#FF4081"
+            android:textColor="#fff"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

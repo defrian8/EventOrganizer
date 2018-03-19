@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="id.pens.eventorganizer.WelcomeEventActivity">
+    
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/like"
+            android:layout_height="162dp"
+            android:layout_weight="0.15" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Selamat Datang!"
+            android:layout_gravity="center_horizontal"
+            android:textSize="28sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="Terima kasih atas partisipasi Anda dalam event :"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_nama_event"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="nama event"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="gravity"
+            android:layout_width="wrap_content"
+            android:text="E Tiket sudah kami kirim ke aplikasi Anda, silahkan gunakan eTiket tersebut untuk check in pada saat akan menghadri event"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

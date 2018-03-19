@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_register"
+    android:background="@drawable/animation_list"  tools:context="id.pens.eventorganizer.RegisterActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif"
+        android:text="REGISTER"/>
+
+    <EditText
+        android:id="@+id/et_register_nama"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:textColorHint="#80FFFFFF"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/bg_rectangle_txt"
+        android:textColor="#80FFFFFF"/>
+
+    <EditText
+        android:id="@+id/et_register_email"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#80FFFFFF"
+        android:padding="8dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_rectangle_txt"
+        android:textColor="#80FFFFFF"/>
+    <EditText
+        android:id="@+id/et_register_username"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="#80FFFFFF"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/bg_rectangle_txt"
+        android:textColor="#80FFFFFF"/>
+    <EditText
+        android:id="@+id/et_register_phone"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No Telp"
+        android:textColorHint="#80FFFFFF"
+        android:padding="8dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/bg_rectangle_txt"
+        android:textColor="#80FFFFFF"/>
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#80FFFFFF"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:background="@drawable/bg_rectangle_txt"
+        android:textColor="#80FFFFFF"/>
+
+    <Button
+        android:id="@+id/btn_register_Register"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="REGISTER"
+        android:background="@drawable/bg_rectangle_buttn"/>
+</LinearLayout>
+</RelativeLayout>

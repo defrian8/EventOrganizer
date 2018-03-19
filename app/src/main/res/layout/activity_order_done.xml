@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/rel_order_done"
+    tools:context="id.pens.eventorganizer.OrderDoneActivity">
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_height="300dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_check"
+            android:layout_height="120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout Done"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14pt"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kami Telah Menerima Pesanan Anda, Segera lakukan pembayaran agar pesanan anda dapat diproses"
+            android:textSize="9pt"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/btn_order_done"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:background="#1E88E5"/>
+
+    </RelativeLayout>
+</RelativeLayout>
